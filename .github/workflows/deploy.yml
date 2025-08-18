@@ -1,9 +1,11 @@
-name: Build and Deploy to Docker Hub and Render
+name: CI/CD - Docker + Render
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
   workflow_dispatch:
+
 
 env:
   IMAGE_NAME: rennybaez/holamundo
